@@ -14,12 +14,18 @@ class="ui red basic label"
   <p *ngIf="authForm.errors.passwordDontMatch">
      Password and Password Confirmation must match
   </p>
+  <p *ngIf="authForm.errors.noConection">
+   No internet connection detected, failed to sign up
+  </p>
+  <p *ngIf="authForm.errors.unknownError">
+    Sorry try again later
+  </p>
 </div>
 <div>
   <button class="ui submit button primary"> 
     Submit 
   </button>
-  {{ authForm.errors | json }}
+
 
 </div>
 
