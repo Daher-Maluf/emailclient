@@ -1,7 +1,7 @@
 <h3>Sign In</h3>
-<form (ngSubmit)="onSubmit()" class="ui form" [formGroup]="authForm">
-<app-input inputType="text" label="username" [control]="authForm.get('username')"></app-input>
-<app-input inputType="password" label="password" [control]="authForm.get('password')"></app-input>
+<form (ngSubmit)="onSubmit()" class="ui inverted form" [formGroup]="authForm">
+<app-input inputType="text" label="Username" [control]="authForm.get('username')"></app-input>
+<app-input inputType="password" label="Password" [control]="authForm.get('password')"></app-input>
 
 <div *ngIf="authForm.errors" class="ui red basic label">
 <p *ngIf="authForm.errors.credentials">
